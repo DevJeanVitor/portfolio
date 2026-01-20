@@ -376,8 +376,8 @@
                         <div class="flex justify-between items-end mb-2">
                             <h4 class="text-xs font-bold uppercase text-stone-400" data-key="modal_gallery">Galeria</h4>
                         </div>
-                        <div class="relative group w-full h-56 md:h-80 bg-stone-900 rounded-lg overflow-hidden mb-6 shadow-md border border-stone-700">
-                            <img id="carousel-img" src="" class="w-full h-full object-cover transition-opacity duration-500 opacity-90 hover:opacity-100">
+                        <div class="relative group w-full h-64 md:h-[500px] bg-stone-900 rounded-lg overflow-hidden mb-6 shadow-md border border-stone-700"> 
+                            <img id="carousel-img" src="" class="w-full h-full object-contain transition-opacity duration-500 opacity-90 hover:opacity-100">
                             <button onclick="carouselPrev()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white p-2 rounded-full backdrop-blur-sm"><i data-lucide="chevron-left"></i></button>
                             <button onclick="carouselNext()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white p-2 rounded-full backdrop-blur-sm"><i data-lucide="chevron-right"></i></button>
                         </div>
@@ -453,9 +453,9 @@
                     modal: { context: "Contexto do Projeto", problem: "Desafio & Problema", solution: "Engenharia & Solução", results: "Impacto & Resultados", gallery: "Galeria", actions: "Ações", techs: "Tecnologias", show_gallery: "Visualizar Galeria", hide_gallery: "Ocultar Galeria", live_demo: "Demo Ao Vivo" },
                     list: [
                         {
-                            id: 1, title: "MPPT Solar Charge Controller", category: "Firmware & Hardware", icon: "cpu",
+                            id: 1, title: "Controlador de carga solar MPPT", category: "Firmware & Hardware", icon: "cpu",
                             image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=800",
-                            images: ["https://github.com/user-attachments/assets/0a6271a4-b635-45e7-a7ba-e6e435c72a47", "https://images.unsplash.com/photo-1558449028-b53a39d100fc?w=800"],
+                            images: ["https://github.com/user-attachments/assets/0a6271a4-b635-45e7-a7ba-e6e435c72a47"],
                             desc: "Controlador de carga para VEs com algoritmo MPPT e telemetria IoT via ESP32.",
                             tech: ["C++", "ESP32", "Firebase", "MPPT"],
                             links: { repo: "https://github.com/DevJeanVitor/MPPT-Solar-Charger-ESP32" },
@@ -951,4 +951,5 @@
     </script>
 </body>
 </html>
+
 
